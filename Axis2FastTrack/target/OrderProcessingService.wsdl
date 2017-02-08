@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://OrderProcessing.service.axis2.org" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" targetNamespace="http://OrderProcessing.service.axis2.org">
+    <wsdl:types>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://OrderProcessing.service.axis2.org">
+            <xs:element name="viewOrderDetails">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="element" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="viewOrderDetailsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="placeOrder">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="element" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="placeOrderResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getStockStatus">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="element" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getStockStatusResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="placeOrderRequest">
+        <wsdl:part name="parameters" element="ns:placeOrder"/>
+    </wsdl:message>
+    <wsdl:message name="placeOrderResponse">
+        <wsdl:part name="parameters" element="ns:placeOrderResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getStockStatusRequest">
+        <wsdl:part name="parameters" element="ns:getStockStatus"/>
+    </wsdl:message>
+    <wsdl:message name="getStockStatusResponse">
+        <wsdl:part name="parameters" element="ns:getStockStatusResponse"/>
+    </wsdl:message>
+    <wsdl:message name="viewOrderDetailsRequest">
+        <wsdl:part name="parameters" element="ns:viewOrderDetails"/>
+    </wsdl:message>
+    <wsdl:message name="viewOrderDetailsResponse">
+        <wsdl:part name="parameters" element="ns:viewOrderDetailsResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="OrderProcessingServicePortType">
+        <wsdl:operation name="placeOrder">
+            <wsdl:input message="ns:placeOrderRequest" wsaw:Action="urn:placeOrder"/>
+            <wsdl:output message="ns:placeOrderResponse" wsaw:Action="urn:placeOrderResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getStockStatus">
+            <wsdl:input message="ns:getStockStatusRequest" wsaw:Action="urn:getStockStatus"/>
+            <wsdl:output message="ns:getStockStatusResponse" wsaw:Action="urn:getStockStatusResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="viewOrderDetails">
+            <wsdl:input message="ns:viewOrderDetailsRequest" wsaw:Action="urn:viewOrderDetails"/>
+            <wsdl:output message="ns:viewOrderDetailsResponse" wsaw:Action="urn:viewOrderDetailsResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="OrderProcessingServiceSoap11Binding" type="ns:OrderProcessingServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="placeOrder">
+            <soap:operation soapAction="urn:placeOrder" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getStockStatus">
+            <soap:operation soapAction="urn:getStockStatus" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="viewOrderDetails">
+            <soap:operation soapAction="urn:viewOrderDetails" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="OrderProcessingServiceSoap12Binding" type="ns:OrderProcessingServicePortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="placeOrder">
+            <soap12:operation soapAction="urn:placeOrder" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getStockStatus">
+            <soap12:operation soapAction="urn:getStockStatus" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="viewOrderDetails">
+            <soap12:operation soapAction="urn:viewOrderDetails" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="OrderProcessingServiceHttpBinding" type="ns:OrderProcessingServicePortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="placeOrder">
+            <http:operation location="placeOrder"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getStockStatus">
+            <http:operation location="getStockStatus"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="viewOrderDetails">
+            <http:operation location="viewOrderDetails"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="OrderProcessingService">
+        <wsdl:port name="OrderProcessingServiceHttpSoap11Endpoint" binding="ns:OrderProcessingServiceSoap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/OrderProcessingService"/>
+        </wsdl:port>
+        <wsdl:port name="OrderProcessingServiceHttpSoap12Endpoint" binding="ns:OrderProcessingServiceSoap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/OrderProcessingService"/>
+        </wsdl:port>
+        <wsdl:port name="OrderProcessingServiceHttpEndpoint" binding="ns:OrderProcessingServiceHttpBinding">
+            <http:address location="http://localhost:8080/axis2/services/OrderProcessingService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

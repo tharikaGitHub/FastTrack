@@ -1,0 +1,6 @@
+org/axis2/service/OrderProcessing/Inventory.class
+org/axis2/client/OrderProcessing/OrderProcessingClient.class
+org/axis2/service/OrderProcessing/Item.class
+org/axis2/service/OrderProcessing/Order.class
+org/axis2/service/OrderProcessing/OrderProcessingService.class
+org/axis2/service/OrderProcessing/Product.class

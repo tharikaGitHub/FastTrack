@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="book.xsd">
+    <book id="DC_CD_1">
+        <title>David Copperfield</title>
+        <author>Charles Dickens</author>
+        <price>$10.00</price>
+    </book>
+    <book id="MD_HM_1">
+        <title>Moby-Dick</title>
+        <author>Herman Melville</author>
+        <price>$15.30</price>
+    </book>
+    <book id="WH_EB_1">
+        <title>Wuthering Heights</title>
+        <author>Emily Bronte</author>
+        <price>$12.00</price>
+    </book>
+    <book id="PD_JA_1">
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <price>$18.50</price>
+    </book>
+    <book id="WP_T_1">
+        <title>War and Peace</title>
+        <author>Tolstoy</author>
+        <price>$16.30</price>
+    </book>
+</catalog>
