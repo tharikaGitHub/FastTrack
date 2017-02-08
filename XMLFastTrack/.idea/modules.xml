@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XMLFastTrack.iml" filepath="$PROJECT_DIR$/XMLFastTrack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMLParser/XMLParser.iml" filepath="$PROJECT_DIR$/XMLParser/XMLParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMLTransformer/XMLTransformer.iml" filepath="$PROJECT_DIR$/XMLTransformer/XMLTransformer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMLValidator/XMLValidator.iml" filepath="$PROJECT_DIR$/XMLValidator/XMLValidator.iml" />
+    </modules>
+  </component>
+</project>
