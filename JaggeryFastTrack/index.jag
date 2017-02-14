@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%
+var json = require("books.json");
+%>
+<style>
+  html, body {
+    height: 100%;
+  }
+  #tableContainer-1 {
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+  #tableContainer-2 {
+    vertical-align: middle;
+    display: table-cell;
+    height: 100%;
+  }
+  #bookTable {
+    margin: 0 auto;
+  }
+  #bookTable1 {
+    margin: 0 auto;
+  }
+  H2 { text-align: center }
+</style>
+</head>
+
+<body style="background-image:url(booksImg.jpg)">
+
+<h1 style="color:white;">Books</h1>
+ <%
+ include ("new_books.jag");
+ %>
+ <div id="tableContainer-1">
+  <div id="tableContainer-2">
+	 <h2 style="color:white;">Add new book to store</h2>
+		<form method="post">
+		 <table id="bookTable1">
+		  <tr>
+		   <td align="right"><font color="white">Book ID:</font></td>
+		   <td align="left"><input type="text" name="id" /></td>
+		  </tr>
+		  <tr>
+		   <td align="right"><font color="white">Title:</font></td>
+		   <td align="left"><input type="text" name="title" /></td>
+		  </tr>
+		  <tr>
+		   <td align="right"><font color="white">Author:</font></td>
+		   <td align="left"><input type="text" name="author" /></td>
+		  </tr>
+		  <tr>
+		   <td align="right"><font color="white">Price:</font></td>
+		   <td align="left"><input type="text" name="price" /></td>
+		  </tr>
+		 </table>
+		 <br> 
+		 <div style="text-align:center;">
+		 	<input type="submit" value="Add Book">
+		 	</input>
+		 </div>
+		</form>
+	 
+	<%
+	// if it's post request to add a employee
+	if(request.getMethod() == "POST"){
+	 var id = request.getParameter("id");
+	 var title = request.getParameter("title");
+	 var author = request.getParameter("author");
+	 var price = request.getParameter("price");
+	  
+	 if(!id || !title || !author || !price){
+	   response.status = 400;
+	   print("<script>alert('Book details cannot be empty!');</script>");
+	  } else {
+	   json.books.push(
+	   {
+	    "id":id, "title":title, "author": author, "price":price
+	   }
+	   );
+	 
+	   var file = new File("books.json");
+	   file.open("w");
+	   file.write(json);
+	   file.close();
+	   response.status = 200;
+	  }
+	}
+	 
+	%>
+	<hr />
+ 
+<h2 style="color:white;">Books available in store</h2>
+	 <table "booksTable" border="2" bgcolor="#ffffff" id="bookTable">
+	  <tr>
+	   <th>Book ID</th>
+	   <th>Title</th>
+	   <th>Author</th>
+	   <th>Price</th>
+	  </tr>
+	  <%
+	  for (var i in json.books){
+	%>
+	  <tr>
+	   <td><%=json.books[i].id%></td>
+	   <td><%=json.books[i].title%></td>
+	   <td><%=json.books[i].author%></td>
+	   <td><%=json.books[i].price%></td>
+	  </tr>
+	  <%
+	 }
+	 
+	 %>
+	 </table>
+
+</body>
+
+
+
+</html>
+
+
