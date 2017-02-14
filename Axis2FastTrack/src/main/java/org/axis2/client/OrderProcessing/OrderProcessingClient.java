@@ -13,9 +13,9 @@ import org.apache.axis2.client.ServiceClient;
 import java.util.HashMap;
 
 public class OrderProcessingClient {
-
     private static EndpointReference targetEPR = new EndpointReference(
             "http://localhost:8080/axis2/services/OrderProcessingService");
+
 
     public static void main(String[] args) {
         try {

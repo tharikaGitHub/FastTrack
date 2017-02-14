@@ -12,6 +12,7 @@ public class OrderProcessingService {
 
     private ArrayList<Order> orderList = new ArrayList<>();
     private int ordercount = 0;
+    private static final String NAMESPACE = "http://OrderProcessing.service.axis2.org";
 
     public OMElement placeOrder(OMElement element) {
         element.build();
@@ -44,7 +45,7 @@ public class OrderProcessingService {
         orderList.add(order);
 
         OMFactory factory = OMAbstractFactory.getOMFactory();
-        OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+        OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
         OMElement method = factory.createOMElement("placeOrderResponse", omNs);
         OMElement id = factory.createOMElement("orderId", omNs);
         id.addChild(factory.createOMText(id, orderId));
@@ -101,8 +102,8 @@ public class OrderProcessingService {
         }
 
         OMFactory factory = OMAbstractFactory.getOMFactory();
-        OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
-        OMElement method = factory.createOMElement("viewOrderDetails", omNs);
+        OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
+        OMElement method = factory.createOMElement("viewOrderDetailsResponse", omNs);
 
         if (!items.isEmpty()) {
             for (Item i : items) {
@@ -129,7 +130,7 @@ public class OrderProcessingService {
         element.detach();
 
         OMFactory factory = OMAbstractFactory.getOMFactory();
-        OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+        OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
         OMElement method = factory.createOMElement("getStockStatusResponse", omNs);
 
         Inventory inventoryInstance = Inventory.getInstance();

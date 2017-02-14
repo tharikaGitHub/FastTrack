@@ -23,8 +23,8 @@
       <file leaf-file-name="services.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="87">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -33,11 +33,29 @@
       <file leaf-file-name="OrderProcessingClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/client/OrderProcessing/OrderProcessingClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="90" column="31" lean-forward="false" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1020">
+              <caret line="228" column="5" lean-forward="true" selection-start-line="228" selection-start-column="5" selection-end-line="228" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderProcessingService.wsdl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/OrderProcessingService.wsdl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1644">
+              <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1021">
+              <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,7 +66,19 @@
             <state relative-caret-position="116">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#309#310#0" expanded="false" />
+                <element signature="e#339#340#0" expanded="false" />
+                <element signature="e#385#386#0" expanded="false" />
+                <element signature="e#423#424#0" expanded="false" />
+                <element signature="e#467#468#0" expanded="false" />
+                <element signature="e#498#499#0" expanded="false" />
+                <element signature="e#555#556#0" expanded="false" />
+                <element signature="e#595#596#0" expanded="false" />
+                <element signature="e#632#633#0" expanded="false" />
+                <element signature="e#665#666#0" expanded="false" />
+                <element signature="e#717#718#0" expanded="false" />
+                <element signature="e#761#762#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,8 +87,8 @@
       <file leaf-file-name="OrderProcessingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4292">
-              <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+            <state relative-caret-position="3538">
+              <caret line="122" column="9" lean-forward="false" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,9 +99,22 @@
       <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="725">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="e#389#390#0" expanded="false" />
+                <element signature="e#421#422#0" expanded="false" />
+                <element signature="e#471#472#0" expanded="false" />
+                <element signature="e#513#514#0" expanded="false" />
+                <element signature="e#551#552#0" expanded="false" />
+                <element signature="e#585#586#0" expanded="false" />
+                <element signature="e#639#640#0" expanded="false" />
+                <element signature="e#685#686#0" expanded="false" />
+                <element signature="e#721#722#0" expanded="false" />
+                <element signature="e#753#754#0" expanded="false" />
+                <element signature="e#803#804#0" expanded="false" />
+                <element signature="e#845#846#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +124,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
               <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="e#275#276#0" expanded="false" />
+                <element signature="e#304#305#0" expanded="false" />
+                <element signature="e#348#349#0" expanded="false" />
+                <element signature="e#384#385#0" expanded="false" />
+                <element signature="e#420#421#0" expanded="false" />
+                <element signature="e#451#452#0" expanded="false" />
+                <element signature="e#500#501#0" expanded="false" />
+                <element signature="e#540#541#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +144,10 @@
             <state relative-caret-position="435">
               <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="45" />
               <folding>
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="false" />
+                <element signature="e#964#965#0" expanded="false" />
+                <element signature="e#1025#1026#0" expanded="false" />
+                <element signature="e#1063#1064#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,11 +180,12 @@
         <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Inventory.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/axis2/client/OrderProcessing/OrderProcessingClient.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java" />
+        <option value="$PROJECT_DIR$/target/OrderProcessingService.wsdl" />
       </list>
     </option>
   </component>
@@ -176,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -215,6 +269,10 @@
               <option name="myItemId" value="axis2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrderProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -248,6 +306,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -521,7 +580,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="106" y="39" width="2454" height="1401" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -532,19 +591,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24774405" sideWeight="0.5016849" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8769483" sideWeight="0.49831507" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6021329" sideWeight="0.49831507" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31091058" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6997539" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24894692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24978939" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67104185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -571,6 +630,265 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4292">
+          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="45" />
+          <folding>
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/client/OrderProcessing/OrderProcessingClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4292">
+          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="45" />
+          <folding>
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/client/OrderProcessing/OrderProcessingClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4292">
+          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="45" />
+          <folding>
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -583,9 +901,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +910,19 @@
         <state relative-caret-position="116">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,7 +941,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -621,7 +962,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,8 +980,10 @@
         <state relative-caret-position="435">
           <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="45" />
           <folding>
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,9 +1000,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,7 +1009,19 @@
         <state relative-caret-position="1218">
           <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,7 +1040,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -686,7 +1061,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -695,8 +1079,10 @@
         <state relative-caret-position="870">
           <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,9 +1099,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -789,36 +1173,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/OrderProcessingService.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2116">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="45" />
           <folding>
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,7 +1190,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/META-INF/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,23 +1237,43 @@
         <state relative-caret-position="116">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/Product.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="1021">
+          <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/OrderProcessingService.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1644">
+          <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/service/OrderProcessing/OrderProcessingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4292">
-          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+        <state relative-caret-position="3538">
+          <caret line="122" column="9" lean-forward="false" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -861,11 +1282,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/axis2/client/OrderProcessing/OrderProcessingClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="90" column="31" lean-forward="false" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1020">
+          <caret line="228" column="5" lean-forward="true" selection-start-line="228" selection-start-column="5" selection-end-line="228" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
