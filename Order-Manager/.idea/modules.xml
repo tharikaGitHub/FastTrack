@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Backend-Service/Backend-Service.iml" filepath="$PROJECT_DIR$/Backend-Service/Backend-Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Frontend-Client/Frontend-Client.iml" filepath="$PROJECT_DIR$/Frontend-Client/Frontend-Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Order-Manager.iml" filepath="$PROJECT_DIR$/Order-Manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Service-Stub/Service-Stub.iml" filepath="$PROJECT_DIR$/Service-Stub/Service-Stub.iml" />
+    </modules>
+  </component>
+</project>

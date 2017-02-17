@@ -1,0 +1,13 @@
+org/wso2/carbon/order/manager/GetOrdersResponse$Factory.class
+org/wso2/carbon/order/manager/model/xsd/Item$Factory.class
+org/wso2/carbon/order/manager/stub/OrderProcessingManagerStub.class
+org/wso2/carbon/order/manager/AddOrder$Factory.class
+org/wso2/carbon/order/manager/GetOrdersResponse.class
+org/wso2/carbon/order/manager/GetOrders$Factory.class
+org/wso2/carbon/order/manager/AddOrder.class
+org/wso2/carbon/order/manager/model/xsd/Item.class
+org/wso2/carbon/order/manager/model/xsd/ExtensionMapper.class
+org/wso2/carbon/order/manager/GetOrders.class
+org/wso2/carbon/order/manager/stub/OrderProcessingManagerStub$1.class
+org/wso2/carbon/order/manager/stub/OrderProcessingManagerCallbackHandler.class
+org/wso2/carbon/order/manager/stub/OrderProcessingManager.class

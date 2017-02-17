@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487307807577
+Build-Jdk: 1.8.0_121
+Built-By: tharika
+Bundle-ManifestVersion: 2
+Bundle-Name: Service-Stub
+Bundle-SymbolicName: Service-Stub
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: org.wso2.carbon.order.manager;uses:="org.wso2.carbon.ord
+ er.manager.model.xsd";version="1.0.0",org.wso2.carbon.order.manager.mod
+ el.xsd;version="1.0.0",org.wso2.carbon.order.manager.stub;uses:="org.ws
+ o2.carbon.order.manager.model.xsd";version="1.0.0"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-3.2.0.201605172007

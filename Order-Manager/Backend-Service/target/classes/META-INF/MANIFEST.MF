@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487307804484
+Build-Jdk: 1.8.0_121
+Built-By: tharika
+Bundle-ManifestVersion: 2
+Bundle-Name: Backend-Service
+Bundle-SymbolicName: Backend-Service
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.wso2.carbon.order.manager;uses:="org.wso2.carbon.ord
+ er.manager.model";version="1.0.0",org.wso2.carbon.order.manager.model;v
+ ersion="1.0.0"
+Import-Package: org.wso2.carbon.context;version="[4.4,5)",org.wso2.carbo
+ n.order.manager.model,org.wso2.carbon.registry.api;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-3.2.0.201605172007

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="backend" />
+        <module name="Backend-Service" />
+        <module name="frontend" />
+        <module name="Frontend-Client" />
+        <module name="Service-Stub" />
+        <module name="service-stub" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="backend" target="1.5" />
+      <module name="Backend-Service" target="1.5" />
+      <module name="frontend" target="1.5" />
+      <module name="Frontend-Client" target="1.5" />
+      <module name="ordarmanager" target="1.5" />
+      <module name="Order-Manager" target="1.5" />
+      <module name="service-stub" target="1.5" />
+      <module name="Service-Stub" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
