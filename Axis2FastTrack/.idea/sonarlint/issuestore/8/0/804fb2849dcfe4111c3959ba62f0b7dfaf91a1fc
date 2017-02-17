@@ -1,0 +1,9 @@
+
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(õÊõıÿÿÿÿ
+‚squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(Â‡½Ğ
+Œsquid:S1319"wThe type of the "productsInStock" object should be an interface such as "Map" rather than the implementation "HashMap".(ÓÎıû
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(µæÖö
+Hsquid:UselessParenthesesCheck"!Remove those useless parentheses.(ä¬Úœ
+Isquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(Ñš¤
+Isquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(Ñš¤

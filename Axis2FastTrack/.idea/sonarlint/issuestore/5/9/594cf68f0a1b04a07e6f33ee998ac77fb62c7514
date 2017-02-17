@@ -1,0 +1,77 @@
+
+Hsquid:UselessParenthesesCheck"!Remove those useless parentheses.(ÌÒ§ç
+Msquid:UselessParenthesesCheck"!Remove those useless parentheses.(û£˜ÿÿÿÿÿ
+Msquid:UselessParenthesesCheck"!Remove those useless parentheses.(ˆÇ£ÿÿÿÿÿ
+Nsquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(İ…˜Ôùÿÿÿÿ
+gsquid:S1192"RDefine a constant instead of duplicating this literal "orderprocessingns" 5 times.(¹§ ¤
+Zsquid:S1192"FDefine a constant instead of duplicating this literal "error" 4 times.(ö·ÔW
+a$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(û£˜ÿÿÿÿÿ
+‡squid:S1319"mThe type of the "order" object should be an interface such as "Map" rather than the implementation "HashMap".(üŸ«øÿÿÿÿ
+g
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ü§è½ùÿÿÿÿ
+g
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(”ñÒ‡ûÿÿÿÿ
+a
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(–şŠ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¯¾Ü¾
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(æàĞÃşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ñ±å
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(çø Ğ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¡ªÌ¹
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¹Ò­€üÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ú•€Ë
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(×›­6
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(±ò‚Çúÿÿÿÿ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(×›­6
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(±ò‚Çúÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(„…ÖÓùÿÿÿÿ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(¼Ãú$
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(•òàüÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ñÀ°ş
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(•òàüÿÿÿÿÿ
+xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "method".(áĞĞ”ÿÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(”Å‹í
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(¿èÑÿşÿÿÿÿ
+:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
+:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
+:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
+:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(®óÌ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

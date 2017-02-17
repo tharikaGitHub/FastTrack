@@ -1,0 +1,10 @@
+
+„squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¾ïØe
+squid:S1319"sThe type of the "itemList" object should be an interface such as "List" rather than the implementation "ArrayList".(À­ÿıÿÿÿÿ
+squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ò›Ã/
+Šsquid:S1319"uThe type of the "removeList" object should be an interface such as "List" rather than the implementation "ArrayList".(°Ôîù
+b
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(áÚ¤¬
+b
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(³ÈĞ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(õÊõıÿÿÿÿ

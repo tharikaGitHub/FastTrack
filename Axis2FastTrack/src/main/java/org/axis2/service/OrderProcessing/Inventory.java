@@ -9,7 +9,6 @@ public class Inventory {
     private static Inventory instance = new Inventory();
 
     public Inventory() {
-        System.out.println("Inventory initialized");
         Product prod1 = new Product("MacC_1", "Mac Cheese", 34.89);
         Product prod2 = new Product("PasReg_4", "Pasta Regular", 126.00);
         Product prod3 = new Product("PeaB_31", "Peanut Butter", 54.50);
@@ -23,8 +22,6 @@ public class Inventory {
         tempStock.put(prod4, 11);
 
         setProductsInStock(tempStock);
-
-        System.out.println("Finished creating inventory instance");
 
     }
 
@@ -41,12 +38,10 @@ public class Inventory {
     }
 
     public boolean updateInventory(Integer requestedQuantity, String id) {
-        System.out.println("Trying to update inventory");
         for(Product prod : productsInStock.keySet()) {
             Integer availableQuant = productsInStock.get(prod);
             if(prod.getProductId().equals(id)) {
                 if(availableQuant >= requestedQuantity) {
-                    System.out.println("Items can be supplied");
                     productsInStock.put(prod, (availableQuant - requestedQuantity));
                     return true;
                 } else return false; //product not in stock
