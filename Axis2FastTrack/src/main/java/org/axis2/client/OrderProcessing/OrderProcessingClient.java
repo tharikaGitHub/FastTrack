@@ -276,7 +276,7 @@ public class OrderProcessingClient {
     }
 
     /**
-     * THis method prints the status of the stock
+     * This method prints the status of the stock
      *
      * @param element - the response from the server
      */
