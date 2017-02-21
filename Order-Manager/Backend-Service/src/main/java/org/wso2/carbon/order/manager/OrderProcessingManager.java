@@ -1,5 +1,27 @@
+/*
+ *
+ *   Copyright (c) ${date}, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ *   WSO2 Inc. licenses this file to you under the Apache License,
+ *   Version 2.0 (the "License"); you may not use this file except
+ *   in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ * /
+ */
+
 package org.wso2.carbon.order.manager;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.carbon.context.CarbonContext;
 import org.wso2.carbon.context.RegistryType;
 import org.wso2.carbon.order.manager.model.Item;
@@ -9,19 +31,17 @@ import org.wso2.carbon.registry.api.Resource;
 
 import java.io.*;
 import java.util.HashMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-/**
- * Created by tharika on 2/16/17.
- */
 public class OrderProcessingManager {
     private static int orderID = 1;
     private static final String REG_LOCATION = "orders_location";
-    Registry registry = null;
+    private Registry registry = null;
 
-    private static Logger logger = Logger.getLogger(OrderProcessingManager.class.getName());
+    private static final Log log = LogFactory.getLog(OrderProcessingManager.class);
 
+    /**
+     * This constructor is used to initialize the list of orders.
+     */
     public OrderProcessingManager() {
         HashMap<Integer, Item> orders = new HashMap<Integer, Item>();
 
@@ -30,19 +50,25 @@ public class OrderProcessingManager {
         orders.put(orderID++, new Item("PeaB_31", "Peanut Butter", 54.50));
         orders.put(orderID++, new Item("AppSa_62", "Apple Sauce", 78.45));
 
-        registry = CarbonContext.getThreadLocalCarbonContext().getRegistry(RegistryType.valueOf(RegistryType.LOCAL_REPOSITORY.toString()));
+        registry = CarbonContext.getThreadLocalCarbonContext()
+                .getRegistry(RegistryType.valueOf(RegistryType.LOCAL_REPOSITORY.toString()));
 
         try {
             Resource orderRes = registry.newResource();
             orderRes.setContent(serialize(orders));
             registry.put(REG_LOCATION, orderRes);
         } catch (RegistryException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         } catch (IOException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         }
     }
 
+    /**
+     * This method gets the orders.
+     *
+     * @return - list of items
+     */
     public Item[] getOrders() {
         Resource orderRes = null;
         try {
@@ -52,15 +78,20 @@ public class OrderProcessingManager {
                 return tmp.values().toArray(new Item[tmp.values().size()]);
             }
         } catch (IOException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         } catch (ClassNotFoundException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         } catch (RegistryException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         }
-        return new Item[]{};
+        return new Item[] {};
     }
 
+    /**
+     * This method adds the order.
+     *
+     * @param item - item for the order
+     */
     public void addOrder(Item item) {
         Resource orderRes = null;
         try {
@@ -72,14 +103,21 @@ public class OrderProcessingManager {
                 registry.put(REG_LOCATION, orderRes);
             }
         } catch (RegistryException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         } catch (ClassNotFoundException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         } catch (IOException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            log.error(e);
         }
     }
 
+    /**
+     * This method serializes the object (it will be stored in the carbon registry)
+     *
+     * @param obj - order
+     * @return - serialized order object
+     * @throws IOException - exception when serializing
+     */
     private static byte[] serialize(Object obj) throws IOException {
         ByteArrayOutputStream b = new ByteArrayOutputStream();
         ObjectOutputStream o = new ObjectOutputStream(b);
@@ -87,6 +125,14 @@ public class OrderProcessingManager {
         return b.toByteArray();
     }
 
+    /**
+     * This method deserializes the byte stream.
+     *
+     * @param bytes - stream of bytes
+     * @return - order object
+     * @throws IOException            - exception when deserializing
+     * @throws ClassNotFoundException exception when deserializing
+     */
     private static Object deserialize(byte[] bytes) throws IOException, ClassNotFoundException {
         ByteArrayInputStream b = new ByteArrayInputStream(bytes);
         ObjectInputStream o = new ObjectInputStream(b);

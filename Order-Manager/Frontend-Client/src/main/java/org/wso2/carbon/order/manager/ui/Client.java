@@ -1,3 +1,23 @@
+/*
+ *
+ *   Copyright (c) ${date}, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ *   WSO2 Inc. licenses this file to you under the Apache License,
+ *   Version 2.0 (the "License"); you may not use this file except
+ *   in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ * /
+ */
+
 package org.wso2.carbon.order.manager.ui;
 
 import org.apache.axis2.AxisFault;
@@ -10,13 +30,10 @@ import org.wso2.carbon.order.manager.model.xsd.Item;
 
 import java.rmi.RemoteException;
 
-/**
- * Created by tharika on 2/16/17.
- */
 public class Client {
     private OrderProcessingManagerStub stub;
 
-    public Client(ConfigurationContext ctx, String backendServerUrl, String cookie) throws AxisFault{
+    public Client(ConfigurationContext ctx, String backendServerUrl, String cookie) throws AxisFault {
         String serviceUrl = backendServerUrl + "OrderProcessingManager";
         stub = new OrderProcessingManagerStub(ctx, serviceUrl);
         ServiceClient serviceClient = stub._getServiceClient();
