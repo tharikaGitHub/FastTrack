@@ -1,0 +1,6 @@
+
+Vsquid:S1161":Add the "@Override" annotation above this method signature(ÜÕ”8¤«ÂÔ¥+
+[squid:S1161":Add the "@Override" annotation above this method signature(”¤š‹üÿÿÿÿ8¤«ÂÔ¥+
+Usquid:S1161":Add the "@Override" annotation above this method signature(€‰»8¤«ÂÔ¥+
+_squid:S1854">Remove this useless assignment to local variable "traceState".(²Çß£úÿÿÿÿ8¤«ÂÔ¥+
+hsquid:S1226"GIntroduce a new variable instead of reusing the parameter "traceState".(²Çß£úÿÿÿÿ8¤«ÂÔ¥+
