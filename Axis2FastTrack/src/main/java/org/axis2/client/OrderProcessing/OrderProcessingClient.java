@@ -1,3 +1,23 @@
+/*
+ *
+ *   Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ *   WSO2 Inc. licenses this file to you under the Apache License,
+ *   Version 2.0 (the "License"); you may not use this file except
+ *   in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ * /
+ */
+
 package org.axis2.client.OrderProcessing;
 
 import org.apache.axiom.om.OMAbstractFactory;
@@ -9,13 +29,21 @@ import org.apache.axis2.Constants;
 import org.apache.axis2.addressing.EndpointReference;
 import org.apache.axis2.client.Options;
 import org.apache.axis2.client.ServiceClient;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import java.util.HashMap;
 
 public class OrderProcessingClient {
+
+    private static final Log log = LogFactory.getLog(OrderProcessingClient.class);
+
     private static EndpointReference targetEPR = new EndpointReference(
             "http://localhost:8080/axis2/services/OrderProcessingService");
+    private static final String NAMESPACE = "orderprocessingns";
 
+    private OrderProcessingClient() {
+    }
 
     public static void main(String[] args) {
         try {
@@ -47,13 +75,13 @@ public class OrderProcessingClient {
             printStockStatus(stockStatusResult);
 
         } catch (AxisFault e) {
-            e.printStackTrace();
+            log.error(e);
         }
     }
 
     public static OMElement placeOrderPayload(HashMap<String, Integer> order) {
         OMFactory factory = OMAbstractFactory.getOMFactory();
-        OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+        OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
         OMElement method = factory.createOMElement("placeOrder", omNs);
 
         for (String key : order.keySet()) {
@@ -73,10 +101,9 @@ public class OrderProcessingClient {
         return method;
     }
 
-
     public static OMElement viewOrderDetailsPayload(String id) {
         OMFactory factory = OMAbstractFactory.getOMFactory();
-        OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+        OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
 
         OMElement method = factory.createOMElement("viewOrderDetails", omNs);
         OMElement orderId = factory.createOMElement("orderId", omNs);
@@ -108,21 +135,23 @@ public class OrderProcessingClient {
             System.out.println();
             System.out.println("Order ID: " + orderId);
             do {
-                if(orderElem.getQName().getLocalPart().equals(qnameItemsRemoved)) {
+                if (orderElem.getQName().getLocalPart().equals(qnameItemsRemoved)) {
                     System.out.println("Items removed from order : ");
                     System.out.println("--------------------------");
                     removedItemList = ((OMElement) orderElem.getFirstOMChild());
-                    do{
+                    do {
                         String removedItem = removedItemList.getText();
                         System.out.println("- " + removedItem);
-                    } while(!(removedItemList = ((OMElement) removedItemList.getNextOMSibling())).getQName().getLocalPart().equals(qnameReason));
+                    } while (!(removedItemList = ((OMElement) removedItemList.getNextOMSibling())).getQName()
+                            .getLocalPart().equals(qnameReason));
 
-                    if(removedItemList.getQName().getLocalPart().equals(qnameReason)) {
+                    if (removedItemList.getQName().getLocalPart().equals(qnameReason)) {
                         System.out.println("Reason for removal - " + removedItemList.getText());
                     }
 
-                    if((removedItemList.getNextOMSibling()) != null) {
-                        while (((removedItemList = (OMElement) removedItemList.getNextOMSibling()).getQName().getLocalPart().equals(qnameItem))) {
+                    if ((removedItemList.getNextOMSibling()) != null) {
+                        while (((removedItemList = (OMElement) removedItemList.getNextOMSibling()).getQName()
+                                .getLocalPart().equals(qnameItem))) {
                             String removedItem = removedItemList.getText();
                             System.out.println("- " + removedItem);
                         }
@@ -132,12 +161,12 @@ public class OrderProcessingClient {
                     }
 
                 }
-                if(orderElem.getQName().getLocalPart().equals(qnamePrice)) {
+                if (orderElem.getQName().getLocalPart().equals(qnamePrice)) {
                     System.out.println("Total Price of Order : " + orderElem.getText());
                 }
             } while ((orderElem = (OMElement) orderElem.getNextOMSibling()) != null);
         } catch (AxisFault e) {
-            e.printStackTrace();
+            log.error(e);
         }
         return orderId;
     }
@@ -149,10 +178,10 @@ public class OrderProcessingClient {
             orderResult = sender.sendReceive(orderDetails);
         } catch (AxisFault e) {
             OMFactory factory = OMAbstractFactory.getOMFactory();
-            OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+            OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
             orderResult = factory.createOMElement("error", omNs);
             orderResult.addChild(factory.createOMText(orderResult, "error"));
-            e.printStackTrace();
+            log.error(e);
         }
 
         return orderResult;
@@ -172,7 +201,8 @@ public class OrderProcessingClient {
             do {
                 item = (OMElement) orderItem.getFirstOMChild();
                 quantity = (OMElement) item.getNextOMSibling();
-                System.out.println("Item ID : " + item.getText() + " ---- " + "Quantity ordered : " + Integer.parseInt(quantity.getText()));
+                System.out.println("Item ID : " + item.getText() + " ---- " + "Quantity ordered : " + Integer
+                        .parseInt(quantity.getText()));
             } while ((orderItem = (OMElement) orderItem.getNextOMSibling()) != null);
         } else {
             System.out.println("The requested order does not exist");
@@ -182,7 +212,7 @@ public class OrderProcessingClient {
 
     public static OMElement stockStatusRequestPayload() {
         OMFactory factory = OMAbstractFactory.getOMFactory();
-        OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+        OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
 
         OMElement method = factory.createOMElement("getStockStatus", omNs);
         return method;
@@ -195,10 +225,10 @@ public class OrderProcessingClient {
             stockResult = sender.sendReceive(stockStatusRequest);
         } catch (AxisFault e) {
             OMFactory factory = OMAbstractFactory.getOMFactory();
-            OMNamespace omNs = factory.createOMNamespace("orderprocessingns", "ns");
+            OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
             stockResult = factory.createOMElement("error", omNs);
             stockResult.addChild(factory.createOMText(stockResult, "error"));
-            e.printStackTrace();
+            log.error(e);
         }
 
         return stockResult;
@@ -220,7 +250,9 @@ public class OrderProcessingClient {
                 productId = (OMElement) product.getFirstOMChild();
                 productName = (OMElement) productId.getNextOMSibling();
                 quantityAvailable = (OMElement) productName.getNextOMSibling();
-                System.out.println("Product ID : " + productId.getText() + " --- " + "Name : " + productName.getText() + " --- " + "Quantity in Stock : " + quantityAvailable.getText());
+                System.out.println(
+                        "Product ID : " + productId.getText() + " --- " + "Name : " + productName.getText() + " --- "
+                                + "Quantity in Stock : " + quantityAvailable.getText());
             } while ((product = (OMElement) product.getNextOMSibling()) != null);
         } else {
             System.out.println("The requested order does not exist");

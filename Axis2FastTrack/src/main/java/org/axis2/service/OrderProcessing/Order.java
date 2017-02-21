@@ -1,3 +1,23 @@
+/*
+ *
+ *   Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ *   WSO2 Inc. licenses this file to you under the Apache License,
+ *   Version 2.0 (the "License"); you may not use this file except
+ *   in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ * /
+ */
+
 package org.axis2.service.OrderProcessing;
 
 import java.text.DecimalFormat;
@@ -35,6 +55,12 @@ public class Order {
         this.orderPrice = orderPrice;
     }
 
+    /**
+     * This is the method used to calculate the order price
+     *
+     * @return - a list of items that are not in stock and a list of items that does not really exist in the inventory.
+     * This handles the case where the customer inputs an invalid itemID
+     */
     public HashMap<String, ArrayList<String>> calculateOrderPrice() {
         ArrayList<String> noSuchProductList = new ArrayList<>();
         ArrayList<String> removeList = new ArrayList<>();
@@ -57,7 +83,7 @@ public class Order {
                 }
             }
 
-            if(!isProduct) {
+            if (!isProduct) {
                 noSuchProductList.add(itemID);
             }
 
@@ -73,7 +99,12 @@ public class Order {
         return returnList;
     }
 
-    public void handleOrderItems (ArrayList<String> removeList) {
+    /**
+     * This method handles the order items to identified the items that are removed from the order
+     *
+     * @param removeList - items removed from the order
+     */
+    public void handleOrderItems(ArrayList<String> removeList) {
 
         if (!removeList.isEmpty()) {
             for (String item : removeList) {
