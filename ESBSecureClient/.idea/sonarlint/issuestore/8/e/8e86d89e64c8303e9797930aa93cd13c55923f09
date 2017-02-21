@@ -1,72 +1,66 @@
 
-Hsquid:UselessParenthesesCheck"!Remove those useless parentheses.(ÌÒ§ç
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(¯¾Ü¾
-g
-squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ü§è½ùÿÿÿÿ
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(Ñ±å
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(çø Ğ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(±ò‚Çúÿÿÿÿ
-Nsquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(İ…˜Ôùÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(„…ÖÓùÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(±ò‚Çúÿÿÿÿ
-xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "method".(áĞĞ”ÿÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-N
-squid:S106";Replace this usage of System.out or System.err by a logger.(×›­6
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(”Å‹í
 g
 squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(”ñÒ‡ûÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+Msquid:UselessParenthesesCheck"!Remove those useless parentheses.(¿ÄÑ±úÿÿÿÿ
 O
-squid:S106";Replace this usage of System.out or System.err by a logger.(¡ªÌ¹
-:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
-:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+squid:S106";Replace this usage of System.out or System.err by a logger.(¯¾Ü¾
 T
 squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(”Å‹í
-:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
-a
-squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(–şŠ
-N
-squid:S106";Replace this usage of System.out or System.err by a logger.(¼Ãú$
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-‡squid:S1319"mThe type of the "order" object should be an interface such as "Map" rather than the implementation "HashMap".(üŸ«øÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-Hsquid:UselessParenthesesCheck"!Remove those useless parentheses.(Åù²§
-N
-squid:S106";Replace this usage of System.out or System.err by a logger.(×›­6
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-\$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(Åù²§
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(ñÀ°ş
+Msquid:UselessParenthesesCheck"!Remove those useless parentheses.(¸¥²¶ÿÿÿÿÿ
 T
 squid:S106";Replace this usage of System.out or System.err by a logger.(•òàüÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(æ©û‚ÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+Nsquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(İ…˜Ôùÿÿÿÿ
 T
 squid:S106";Replace this usage of System.out or System.err by a logger.(¹Ò­€üÿÿÿÿ
 T
-squid:S106";Replace this usage of System.out or System.err by a logger.(•òàüÿÿÿÿÿ
-:squid:S1166"%Either log or rethrow this exception.(ÑŞ¶Ï
-Tsquid:S1118":Add a private constructor to hide the implicit public one.(¾î¶Åúÿÿÿÿ
-Zsquid:S1192"FDefine a constant instead of duplicating this literal "error" 4 times.(ö·ÔW
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-Msquid:UselessParenthesesCheck"!Remove those useless parentheses.(ˆÇ£ÿÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(æàĞÃşÿÿÿÿ
+squid:S106";Replace this usage of System.out or System.err by a logger.(±ò‚Çúÿÿÿÿ
 O
 squid:S106";Replace this usage of System.out or System.err by a logger.(ú•€Ë
+g
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ü§è½ùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(æàĞÃşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(×›­6
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¡ªÌ¹
+Hsquid:UselessParenthesesCheck"!Remove those useless parentheses.(ÌÒ§ç
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(çø Ğ
+a
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(–şŠ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "method".(áĞĞ”ÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+‡squid:S1319"mThe type of the "order" object should be an interface such as "Map" rather than the implementation "HashMap".(üŸ«øÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ñ±å
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(•òàüÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÆÀûı
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(„…ÖÓùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+a$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(¿ÄÑ±úÿÿÿÿ
+Zsquid:S1192"FDefine a constant instead of duplicating this literal "error" 4 times.(ö·ÔW
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(±ò‚Çúÿÿÿÿ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(×›­6
