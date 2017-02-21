@@ -35,7 +35,8 @@ public class BookValidator {
 
     private static final Log log = LogFactory.getLog(BookValidator.class);
 
-    private BookValidator() {}
+    private BookValidator() {
+    }
 
     public static void main(String[] args) {
         String pathToXml = "XMLValidator/src/book.xml";
@@ -48,6 +49,11 @@ public class BookValidator {
         }
     }
 
+    /**
+     * @param pathToXml - the path to the xml file
+     * @param pathToXsd - the path to the xsd file
+     * @return - true if no error
+     */
     private static boolean validateWithXSD(String pathToXml, String pathToXsd) {
 
         try {

@@ -54,7 +54,7 @@ public class BookTransformer {
             transformer.transform(xmlSource, result);
 
         } catch (Exception e) {
-           log.error(e);
+            log.error(e);
         }
     }
 }
