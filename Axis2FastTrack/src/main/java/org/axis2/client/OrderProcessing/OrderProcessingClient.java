@@ -192,7 +192,7 @@ public class OrderProcessingClient {
     /**
      * This method gets the order details
      *
-     * @param sender - the service client
+     * @param sender  - the service client
      * @param orderId - order id
      * @return - result of order from the server
      */
