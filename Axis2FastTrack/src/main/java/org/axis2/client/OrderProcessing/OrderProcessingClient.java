@@ -79,6 +79,12 @@ public class OrderProcessingClient {
         }
     }
 
+    /**
+     * This method forms the payload for the place order request.
+     *
+     * @param order - the order with the itemID and the requested quantity
+     * @return - payload
+     */
     public static OMElement placeOrderPayload(HashMap<String, Integer> order) {
         OMFactory factory = OMAbstractFactory.getOMFactory();
         OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
@@ -101,6 +107,12 @@ public class OrderProcessingClient {
         return method;
     }
 
+    /**
+     * This method forms the payload for the view order details request.
+     *
+     * @param id - order id
+     * @return - payload
+     */
     public static OMElement viewOrderDetailsPayload(String id) {
         OMFactory factory = OMAbstractFactory.getOMFactory();
         OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
@@ -112,6 +124,12 @@ public class OrderProcessingClient {
         return method;
     }
 
+    /**
+     * This method processes and creates the order
+     *
+     * @param sender - service client object
+     * @return - order id
+     */
     public static String createOrder(ServiceClient sender) {
         HashMap<String, Integer> order = new HashMap<>();
         order.put("MacC_1", 4);
@@ -171,6 +189,13 @@ public class OrderProcessingClient {
         return orderId;
     }
 
+    /**
+     * This method gets the order details
+     *
+     * @param sender - the service client
+     * @param orderId - order id
+     * @return - result of order from the server
+     */
     public static OMElement getOrderDetails(ServiceClient sender, String orderId) {
         OMElement orderDetails = viewOrderDetailsPayload(orderId);
         OMElement orderResult;
@@ -187,6 +212,11 @@ public class OrderProcessingClient {
         return orderResult;
     }
 
+    /**
+     * This method prints the order details from the response of the server
+     *
+     * @param element - response from the server
+     */
     public static void printOrder(OMElement element) {
         element.build();
 
@@ -210,6 +240,11 @@ public class OrderProcessingClient {
 
     }
 
+    /**
+     * This method creates the payload for requesting the stock status.
+     *
+     * @return - payload
+     */
     public static OMElement stockStatusRequestPayload() {
         OMFactory factory = OMAbstractFactory.getOMFactory();
         OMNamespace omNs = factory.createOMNamespace(NAMESPACE, "ns");
@@ -218,6 +253,12 @@ public class OrderProcessingClient {
         return method;
     }
 
+    /**
+     * This method gets the stock status
+     *
+     * @param sender - the service client
+     * @return - response from the server
+     */
     public static OMElement getStockStatus(ServiceClient sender) {
         OMElement stockStatusRequest = stockStatusRequestPayload();
         OMElement stockResult;
@@ -234,6 +275,11 @@ public class OrderProcessingClient {
         return stockResult;
     }
 
+    /**
+     * THis method prints the status of the stock
+     *
+     * @param element - the response from the server
+     */
     public static void printStockStatus(OMElement element) {
         element.build();
 
